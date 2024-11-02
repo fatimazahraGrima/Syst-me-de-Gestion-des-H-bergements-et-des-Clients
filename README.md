@@ -21,6 +21,8 @@ Cette application est un système de gestion d'hébergements permettant aux util
 
 - **Ajout de réservation** : Enregistrement d'une nouvelle réservation pour un client et un hébergement spécifique.
 ![image](https://github.com/user-attachments/assets/9225c080-03e8-4d55-b28b-c3ba9d20bf3f)
+###  Demo Video
+[Voir la vidéo de démonstration sur Google Drive](https://drive.google.com/file/d/1CVHv0x9t_MUeAJuwyYpR9Te4pU_elnQ-/view?usp=sharing)
 
 ---
 
@@ -103,7 +105,8 @@ Le projet suit une architecture en couches pour une meilleure organisation :
 - **MySQL** - Base de données relationnelle
 - **Maven** - Outil de gestion des dépendances
 
-
+###  Demo Video
+[Voir la vidéo de démonstration sur Google Drive](https://drive.google.com/file/d/1CVHv0x9t_MUeAJuwyYpR9Te4pU_elnQ-/view?usp=sharing)
 ### Auteur
 
 **Grimaa fatimazahra**  
