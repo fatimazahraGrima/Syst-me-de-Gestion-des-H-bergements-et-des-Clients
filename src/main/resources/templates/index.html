@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Page d'accueil - Système de Gestion des Hébergements</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Lien pour FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>Gestion des Hébergements</h2>
+    <a href="/"><i class="fas fa-home"></i> Accueil</a>
+    <a href="/hebergements"><i class="fas fa-hotel"></i> Liste des Hébergements</a>
+    <a href="/reservations"><i class="fas fa-calendar-alt"></i> Liste des Réservations</a>
+    <a href="/reservations/add"><i class="fas fa-plus-circle"></i> Ajouter une Réservation</a>
+</div>
+
+<!-- Contenu principal -->
+<div class="main-content">
+    <!-- Bannière avec une image de fond et texte de bienvenue -->
+    <div class="banner">
+        <h1>Bienvenue sur le Système de Gestion des Hébergements</h1>
+        <p>Gérez vos hébergements et réservations facilement et efficacement.</p>
+    </div>
+
+    <!-- Liens rapides pour la navigation -->
+    <div class="quick-links">
+        <div class="quick-link">
+            <i class="fas fa-hotel"></i>
+            <h3>Hébergements</h3>
+            <p>Consultez la liste complète de nos hébergements et trouvez celui qui vous convient le mieux.</p>
+            <a href="/hebergements" class="link-btn">Voir plus</a>
+        </div>
+
+        <div class="quick-link">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Réservations</h3>
+            <p>Accédez à toutes les réservations et assurez une gestion sans faille de votre calendrier.</p>
+            <a href="/reservations" class="link-btn">Voir plus</a>
+        </div>
+
+        <div class="quick-link">
+            <i class="fas fa-plus-circle"></i>
+            <h3>Ajouter une Réservation</h3>
+            <p>Ajoutez une nouvelle réservation en toute simplicité avec notre formulaire intuitif.</p>
+            <a href="/reservations/add" class="link-btn">Ajouter</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

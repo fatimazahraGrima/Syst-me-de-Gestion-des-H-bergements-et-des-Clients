@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Liste des Hébergements</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="sidebar">
+    <h2>Gestion des Hébergements</h2>
+    <a href="/">Accueil</a>
+    <a href="/hebergements">Liste des Hébergements</a>
+    <a href="/reservations">Liste des Réservations</a>
+    <a href="/reservations/add">Ajouter une Réservation</a>
+</div>
+<div class="main-content">
+    <h1>Liste des Hébergements</h1>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Adresse</th>
+            <th>Prix</th>
+        </tr>
+        <tr th:each="hebergement : ${hebergements}">
+            <td th:text="${hebergement.type}"></td>
+            <td th:text="${hebergement.adresse}"></td>
+            <td th:text="${hebergement.prix}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

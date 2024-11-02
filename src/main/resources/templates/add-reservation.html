@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ajouter une Réservation</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="sidebar">
+    <h2>Gestion des Hébergements</h2>
+    <a href="/">Accueil</a>
+    <a href="/hebergements">Liste des Hébergements</a>
+    <a href="/reservations">Liste des Réservations</a>
+    <a href="/reservations/add">Ajouter une Réservation</a>
+</div>
+<div class="main-content">
+    <h1>Ajouter une Réservation</h1>
+    <form th:action="@{/reservations/add}" th:object="${reservation}" method="post">
+        <label for="clientName">Nom du Client:</label>
+        <input type="text" id="clientName" name="newClientName" placeholder="Entrez le nom du client" required />
+        <label for="clientEmail">Email du Client:</label>
+        <input type="email" id="clientEmail" name="newClientEmail" placeholder="Entrez l'email du client" required />
+        <label for="hebergement">Hébergement:</label>
+        <select id="hebergement" th:field="*{hebergement}">
+            <option value="" disabled selected>Choisissez un hébergement</option>
+            <option th:each="hebergement : ${hebergements}" th:value="${hebergement.id}" th:text="${hebergement.type}"></option>
+        </select>
+        <label for="dateDebut">Date de début:</label>
+        <input type="date" id="dateDebut" th:field="*{dateDebut}" required />
+        <label for="dateFin">Date de fin:</label>
+        <input type="date" id="dateFin" th:field="*{dateFin}" required />
+        <button type="submit">Ajouter la Réservation</button>
+    </form>
+</div>
+</body>
+</html>
