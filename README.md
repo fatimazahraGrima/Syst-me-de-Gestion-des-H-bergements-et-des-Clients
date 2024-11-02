@@ -46,8 +46,8 @@ Cette application est un système de gestion d'hébergements permettant aux util
      ```properties
      # Configuration de la base de données MySQL
      spring.datasource.url=jdbc:mysql://localhost:3306/gestion_hebergements?useSSL=false&serverTimezone=UTC
-     spring.datasource.username=votre_nom_utilisateur
-     spring.datasource.password=votre_mot_de_passe
+     spring.datasource.username=root
+     spring.datasource.password=
      spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
      # Configurations JPA
